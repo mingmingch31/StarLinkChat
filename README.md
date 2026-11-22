@@ -5,7 +5,6 @@
 一款独立全栈研发的移动端实时通讯与个性化空间社交应用，完整覆盖 **Android 原生客户端、WebRTC 音视频通话、Socket.IO 持久化 IM、Jetpack Media3 流媒体空间、Node.js 高可用后端与云端生产部署**。
 
 > 📱 **真机体验包（Release APK）**：请点击右侧或此处前往 [Releases 发布页](https://github.com/mingmingch31/StarLinkChat/releases) 下载最新签名安装包 `StarLinkChat-v1.0.0.apk`（后端已部署于阿里云香港 HTTPS 节点，国内网络免代理直连）。
-> - 🚀 **国内高速下载（免 VPN 秒下）**：[点击下载 StarLinkChat-v1.0.0.apk（阿里云深圳节点）](https://starlink-space-media-2026.oss-cn-shenzhen.aliyuncs.com/releases/StarLinkChat-v1.0.0.apk)
 
 ---
 
