@@ -1,2 +1,40 @@
-# StarLinkChat
+# 🌌 StarLinkChat（星链终端）
 基于 Kotlin + WebRTC + Jetpack Media3 + Node.js + MySQL + 阿里云 OSS 的全栈实时音视频通讯与个性化视频封面空间平台
+
+一款独立全栈研发的移动端实时通讯与个性化空间社交应用，完整覆盖 **Android 原生客户端、WebRTC 音视频通话、Socket.IO 持久化 IM、Jetpack Media3 流媒体空间、Node.js 高可用后端与云端生产部署**。
+
+> 📱 **真机体验包（Release APK）**：请点击右侧或此处前往 [Releases 发布页](https://github.com/mingmingch31/StarLinkChat/releases) 下载最新签名安装包 `StarLinkChat-v1.0.0.apk`（后端已部署于阿里云香港 HTTPS 节点，国内网络免代理直连）。
+
+---
+
+## 📸 实机运行截图 / App Screenshots
+
+> 💡 *(编辑时，可直接把手机截好的 3~4 张运行图从电脑文件夹拖进这段话下面，GitHub 会自动上传并生成图片，删掉这行提示即可)*
+
+---
+
+## 🏗️ 系统架构 / System Architecture
+
+```text
+┌──────────────────────────────────────────────────────────────────────┐
+│                     Android Client (Kotlin)                          │
+│  ViewBinding · OkHttp · Socket.IO · WebRTC · Jetpack Media3 (Exo)    │
+└──────────────┬───────────────────────────────────┬───────────────────┘
+               │ HTTPS / WSS (api.zyw.ltd)         │ Presigned PUT (直传)
+               ▼                                   ▼
+┌──────────────────────────────┐     ┌─────────────────────────────────┐
+│  Nginx (HTTPS / TLS / WS)    │     │     Aliyun OSS (深圳对象存储)     │
+│  Certbot Auto-Renew          │     │   50MB 视频封面 / 15MB 空间音乐    │
+└──────────────┬───────────────┘     └─────────────────────────────────┘
+               │ Proxy (127.0.0.1:3000)
+               ▼
+┌──────────────────────────────┐     ┌─────────────────────────────────┐
+│  Node.js + Express + Socket  │────▶│  MySQL 8.0 (qtaoi_db)           │
+│  PM2 Daemon + JWT + 防刷风控   │     │  用户 / 好友 / 聊天 / 空间 / 限流  │
+└──────────────┬───────────────┘     └─────────────────────────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│  Aliyun DirectMail (SMTP/API)│
+│  6位邮箱登录验证码下发          │
+└──────────────────────────────┘
