@@ -1,4 +1,3 @@
-<img width="1240" height="2772" alt="IMG_20261122_141541" src="https://github.com/user-attachments/assets/0ae99def-842c-41a1-a6ad-7dae0738f56d" />
 # 🌌 StarLinkChat（星链终端）
 基于 Kotlin + WebRTC + Jetpack Media3 + Node.js + MySQL + 阿里云 OSS 的全栈实时音视频通讯与个性化视频封面空间平台
 
@@ -10,7 +9,9 @@
 
 ## 📸 实机运行截图 / App Screenshots
 
-> 💡 <img width="1240" height="2772" alt="IMG_20261122_141514" src="https://github.com/user-attachments/assets/fb805c36-211a-4ac8-a2f8-feeb321f8169" />
+> 💡
+<img width="1240" height="2772" alt="IMG_20261122_141541" src="https://github.com/user-attachments/assets/0ae99def-842c-41a1-a6ad-7dae0738f56d" />
+<img width="1240" height="2772" alt="IMG_20261122_141514" src="https://github.com/user-attachments/assets/fb805c36-211a-4ac8-a2f8-feeb321f8169" />
 <img width="1240" height="2772" alt="Screenshot_2026-11-22-14-13-27-82_1d4455926f8477d6c58e6787073ce808" src="https://github.com/user-attachments/assets/0879cdf5-47a0-40ff-a852-bb2f3bb3c799" />
 <img width="1240" height="2772" alt="IMG_20261122_141618" src="https://github.com/user-attachments/assets/4467e936-959b-4fc4-a192-c4b1a5f3d23b" />
 <img width="1240" height="2772" alt="IMG_20261122_141602" src="https://github.com/user-attachments/assets/3eda13c3-2ce1-4c87-b31e-8c68408234ab" />
