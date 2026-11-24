@@ -45,6 +45,6 @@
                │
                ▼
 ┌──────────────────────────────┐
-│  Aliyun DirectMail (SMTP/API)│
+Aliyun DirectMail (HTTPS OpenAPI)│
 │  6位邮箱登录验证码下发          │
 └──────────────────────────────┘
