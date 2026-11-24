@@ -1,7 +1,7 @@
 # 🌌 StarLinkChat（星链终端）
 基于 Kotlin + WebRTC + Jetpack Media3 + Node.js + MySQL + 阿里云 OSS 的全栈实时音视频通讯与个性化视频封面空间平台
 
-一款独立全栈研发的移动端实时通讯与个性化空间社交应用，完整覆盖 **Android 原生客户端、WebRTC 音视频通话、Socket.IO 持久化 IM、Jetpack Media3 流媒体空间、Node.js 高可用后端与云端生产部署**。
+一款独立全栈研发的安卓移动端实时通讯与个性化空间社交应用，完整覆盖 **Android 原生客户端、WebRTC 音视频通话、Socket.IO 持久化 IM、Jetpack Media3 流媒体空间、Node.js 高可用后端与云端生产部署**。
 
 > 📱 **真机体验包（Release APK）**：请点击右侧或此处前往 [Releases 发布页](https://api.zyw.ltd/downloads/StarLinkChat-v1.0.0.apk) 下载最新签名安装包 `StarLinkChat-v1.0.0.apk`（后端已部署于阿里云香港 HTTPS 节点，国内网络免代理直连）。
 
