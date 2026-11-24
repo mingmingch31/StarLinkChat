@@ -25,26 +25,18 @@
 
 ## 🏗️ 系统架构 / System Architecture
 
-```text
-┌──────────────────────────────────────────────────────────────────────┐
-│                     Android Client (Kotlin)                          │
-│  ViewBinding · OkHttp · Socket.IO · WebRTC · Jetpack Media3 (Exo)    │
-└──────────────┬───────────────────────────────────┬───────────────────┘
-               │ HTTPS / WSS (api.zyw.ltd)         │ Presigned PUT (直传)
-               ▼                                   ▼
-┌──────────────────────────────┐     ┌─────────────────────────────────┐
-│  Nginx (HTTPS / TLS / WS)    │     │     Aliyun OSS (深圳对象存储)     │
-│  Certbot Auto-Renew          │     │   50MB 视频封面 / 15MB 空间音乐    │
-└──────────────┬───────────────┘     └─────────────────────────────────┘
-               │ Proxy (127.0.0.1:3000)
-               ▼
-┌──────────────────────────────┐     ┌─────────────────────────────────┐
-│  Node.js + Express + Socket  │────▶│  MySQL 8.0 (qtaoi_db)           │
-│  PM2 Daemon + JWT + 防刷风控   │     │  用户 / 好友 / 聊天 / 空间 / 限流  │
-└──────────────┬───────────────┘     └─────────────────────────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-Aliyun DirectMail (HTTPS OpenAPI)│
-│  6位邮箱登录验证码下发          │
-└──────────────────────────────┘
+```mermaid
+graph TD
+    Client["📱 Android Client (Kotlin)<br/>ViewBinding · OkHttp · Socket.IO · WebRTC · Media3"]
+    Nginx["🛡️ Nginx Reverse Proxy (香港节点)<br/>HTTPS / WSS · Certbot TLS · 静态 APK 分发"]
+    OSS["☁️ Aliyun OSS (深圳对象存储)<br/>50MB 视频封面 · 15MB 空间音乐"]
+    Node["⚙️ Node.js + Express + Socket.IO<br/>PM2 Daemon · JWT · 四级防刷风控"]
+    MySQL[("🗄️ MySQL 8.0 (qtaoi_db)<br/>用户 · 好友 · 聊天 · 空间 · 限流")]
+    DM["📧 Aliyun DirectMail (HTTPS OpenAPI)<br/>SingleSendMail 6位验证码下发"]
+
+    Client -->|"HTTPS / WSS (api.zyw.ltd)"| Nginx
+    Client -->|"Presigned PUT (直传)"| OSS
+    Nginx -->|"Proxy (127.0.0.1:3000)"| Node
+    Node --> MySQL
+    Node -->|"HTTPS OpenAPI"| DM
+```
