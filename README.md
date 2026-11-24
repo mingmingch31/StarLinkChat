@@ -10,13 +10,17 @@
 ## 📸 实机运行截图 / App Screenshots
 
 > 💡
-<img width="1240" height="2772" alt="IMG_20261122_141541" src="https://github.com/user-attachments/assets/0ae99def-842c-41a1-a6ad-7dae0738f56d" />
-<img width="1240" height="2772" alt="IMG_20261122_141514" src="https://github.com/user-attachments/assets/fb805c36-211a-4ac8-a2f8-feeb321f8169" />
-<img width="1240" height="2772" alt="Screenshot_2026-11-22-14-13-27-82_1d4455926f8477d6c58e6787073ce808" src="https://github.com/user-attachments/assets/0879cdf5-47a0-40ff-a852-bb2f3bb3c799" />
-<img width="1240" height="2772" alt="IMG_20261122_141618" src="https://github.com/user-attachments/assets/4467e936-959b-4fc4-a192-c4b1a5f3d23b" />
-<img width="1240" height="2772" alt="IMG_20261122_141602" src="https://github.com/user-attachments/assets/3eda13c3-2ce1-4c87-b31e-8c68408234ab" />
-<img width="1240" height="2772" alt="IMG_20261122_141541" src="https://github.com/user-attachments/assets/2dd6bebc-045a-4b97-ad20-08b58f60fd73" />
 <img width="1240" height="2772" alt="Screenshot_2026-11-22-14-08-48-15_1d4455926f8477d6c58e6787073ce808" src="https://github.com/user-attachments/assets/93031f29-67f9-4d4e-b5d1-d4b0078b9cf4" />
+<img width="1240" height="2772" alt="IMG_20261122_141541" src="https://github.com/user-attachments/assets/2dd6bebc-045a-4b97-ad20-08b58f60fd73" />
+<img width="1240" height="2772" alt="IMG_20261122_141602" src="https://github.com/user-attachments/assets/3eda13c3-2ce1-4c87-b31e-8c68408234ab" />
+<img width="1240" height="2772" alt="IMG_20261122_141618" src="https://github.com/user-attachments/assets/4467e936-959b-4fc4-a192-c4b1a5f3d23b" />
+<img width="1240" height="2772" alt="Screenshot_2026-11-22-14-13-27-82_1d4455926f8477d6c58e6787073ce808" src="https://github.com/user-attachments/assets/0879cdf5-47a0-40ff-a852-bb2f3bb3c799" />
+<img width="1240" height="2772" alt="IMG_20261122_141514" src="https://github.com/user-attachments/assets/fb805c36-211a-4ac8-a2f8-feeb321f8169" />
+
+
+
+
+
 
 
 ## 🏗️ 系统架构 / System Architecture
